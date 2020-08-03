@@ -1,0 +1,25 @@
+Spyder Editor
+
+This is a temporary script file.
+"""
+import time
+from mcpi.minecraft import Minecraft
+mc=Minecraft.create()
+time.sleep(5)
+print(mc.player.getTilePos())
+x,y,z=mc.player.getvilepos()
+mc.player.settilePos(x,y,z)
+time.sleep(0.5)
+y=y+10
+
+'''health=20
+print(health)
+health=health-2
+print(health)'''
+
+while True:
+    mc.postToChat("李宸漢好帥")
+t=0
+while True:
+    t=t+1
+    mc.postToChat("第"+str(t)+"次")
